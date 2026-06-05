@@ -4,367 +4,485 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Rajaram Tripathi — Green Warrior of India</title>
+  <meta name="description" content="Biography of Dr. Rajaram Tripathi — herbal scientist, organic farmer, and founder of the Maa Danteshwari Herbal Group.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400&family=Maname&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar" id="progressBar"></span></div>
+
   <!-- ─────────────────── NAVBAR ─────────────────── -->
-  <header class="nav">
-    <div class="nav__logo">
-      <div class="nav__logo-mark">
-        <img src="c94c34795d96b223.png" alt="Dr. Rajaram Tripathi portrait">
-      </div>
-      <div class="nav__logo-text">
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-mark"><img src="assets/c94c34795d96b223.png" alt="Dr. Rajaram Tripathi portrait"></span>
+      <span class="nav__logo-text">
         <span class="nav__name">Dr. Rajaram Tripathi</span>
-        <span class="nav__subtitle">Herbal Farmer &amp; Herbal Scientist</span>
-      </div>
-    </div>
+        <span class="nav__subtitle">Herbal Farmer &amp; Scientist</span>
+      </span>
+    </a>
     <nav class="nav__links" aria-label="Primary navigation">
-      <a href="#" class="nav__link nav__link--active">Home</a>
-      <div class="nav__dropdown">
-        <span class="nav__link">Profile</span>
-        <svg class="nav__chevron" width="9" height="5" viewBox="0 0 9 5" aria-hidden="true">
-          <path d="M4.5 5L0 0h9z"/>
-        </svg>
-      </div>
-      <a href="#" class="nav__link">Presentation</a>
-      <div class="nav__dropdown">
-        <span class="nav__link">Post</span>
-        <svg class="nav__chevron" width="9" height="5" viewBox="0 0 9 5" aria-hidden="true">
-          <path d="M4.5 5L0 0h9z"/>
-        </svg>
-      </div>
-      <div class="nav__dropdown">
-        <span class="nav__link">Gallery</span>
-        <svg class="nav__chevron" width="9" height="5" viewBox="0 0 9 5" aria-hidden="true">
-          <path d="M4.5 5L0 0h9z"/>
-        </svg>
-      </div>
+      <a href="#top" class="nav__link nav__link--active">Home</a>
+      <a href="#about" class="nav__link">Profile</a>
+      <a href="#farming" class="nav__link">The Model</a>
+      <a href="#media" class="nav__link">Press</a>
+      <a href="#watch" class="nav__link">Watch</a>
       <a href="#contact" class="nav__link">Contact</a>
-      <button class="nav__search-btn" aria-label="Search">
-        <img src="Vector.svg" alt="" width="14" height="14">
-      </button>
+      <button class="nav__search-btn" aria-label="Search"><img src="assets/Vector.svg" alt="" width="14" height="14"></button>
     </nav>
   </header>
+
+  <span id="top"></span>
 
   <!-- ─────────────────── HERO ─────────────────── -->
   <section class="hero">
     <div class="hero__left">
       <div class="hero__texture" aria-hidden="true"></div>
       <div class="hero__intro">
-        <p class="hero__tagline">A personality that would not be exaggerated to be called the Green Warrior of India</p>
-        <div class="hero__sub-bar">
-          <span>Bridging farming, science, and livelihood</span>
-        </div>
+        <span class="hero__eyebrow"><span class="hero__eyebrow-rule"></span>Maa Danteshwari Herbal Group</span>
+        <h1 class="hero__title">A personality that would not be exaggerated to be called the <em>Green Warrior of India</em></h1>
+        <p class="hero__lead">Bridging farming, science, and livelihood — across the forests of Bastar.</p>
+        <a href="#origins" class="hero__cta">
+          <span>Explore the journey</span>
+          <svg width="34" height="10" viewBox="0 0 34 10" fill="none" aria-hidden="true"><path d="M0 5h32M29 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
       </div>
     </div>
     <div class="hero__right">
-      <div class="hero__photo" role="img" aria-label="Dr. Rajaram Tripathi"></div>
+      <div class="hero__photo" id="heroPhoto" role="img" aria-label="Dr. Rajaram Tripathi"></div>
       <div class="hero__card">
         <span class="hero__card-name">Dr. Rajaram Tripathi</span>
-        <div class="hero__card-role">
-          <span>Founder, Maa Danteshwari Herbal Group</span>
-        </div>
+        <span class="hero__card-role">Founder, Maa Danteshwari Herbal Group</span>
       </div>
     </div>
   </section>
 
-  <!-- ─────────────────── STATS ─────────────────── -->
+  <!-- ─────────────────── STATS (deep-green ribbon) ─────────────────── -->
   <section class="stats" aria-label="Key achievements">
-    <div class="stats__cell">
-      <span class="stats__number">80,000+</span>
-      <span class="stats__label">Farmers Empowered</span>
-    </div>
-    <div class="stats__cell">
-      <span class="stats__number">3.4 Lakh+</span>
-      <span class="stats__label">Trees Planted</span>
-    </div>
-    <div class="stats__cell">
-      <span class="stats__number">250+</span>
-      <span class="stats__label">Medicinal Species Conserved</span>
-    </div>
-    <div class="stats__cell">
-      <span class="stats__number">150+</span>
-      <span class="stats__label">Awards &amp; Recognitions</span>
+    <div class="stats__inner">
+      <div class="stats__cell" data-reveal>
+        <span class="stats__number" data-count="80000" data-suffix="+">80,000+</span>
+        <span class="stats__label">Farmers Empowered</span>
+      </div>
+      <div class="stats__cell" data-reveal data-reveal-delay="90">
+        <span class="stats__number" data-count="3.4" data-decimals="1" data-suffix="L+">3.4L+</span>
+        <span class="stats__label">Trees Planted</span>
+      </div>
+      <div class="stats__cell" data-reveal data-reveal-delay="180">
+        <span class="stats__number" data-count="250" data-suffix="+">250+</span>
+        <span class="stats__label">Medicinal Species Conserved</span>
+      </div>
+      <div class="stats__cell" data-reveal data-reveal-delay="270">
+        <span class="stats__number" data-count="150" data-suffix="+">150+</span>
+        <span class="stats__label">Awards &amp; Recognitions</span>
+      </div>
     </div>
   </section>
 
   <!-- ─────────────────── ORIGINS ─────────────────── -->
-  <section class="origins">
+  <section class="origins" id="origins">
     <div class="origins__text">
-      <h2 class="heading-xl">Rooted in Bastar.<br>Driven by Purpose.</h2>
-      <p class="body-italic">
-        The journey began in the forests of Bastar, where farming was deeply connected to nature, tradition, and community life.
-        <br><br>
-        Observing these systems closely revealed a powerful truth — that agriculture, when done right, can sustain not just land, but livelihoods and dignity.
-        <br><br>
-        This understanding became the foundation of a lifelong mission: to create farming models that are economically viable, environmentally sustainable, and scalable for the future.
-      </p>
+      <div class="eyebrow" data-reveal><span class="eyebrow__num">01</span><span class="eyebrow__text">The Beginning</span></div>
+      <h2 class="section-title" data-reveal data-reveal-delay="80">Rooted in Bastar.<br>Driven by <em>Purpose.</em></h2>
+      <div class="origins__body" data-reveal data-reveal-delay="160">
+        <p>The journey began in the forests of Bastar, where farming was deeply connected to nature, tradition, and community life.</p>
+        <p>Observing these systems closely revealed a powerful truth — that agriculture, when done right, can sustain not just land, but livelihoods and dignity.</p>
+        <p>This understanding became the foundation of a lifelong mission: to create farming models that are economically viable, environmentally sustainable, and scalable for the future.</p>
+      </div>
     </div>
-    <div class="origins__image-wrap">
-      <img src="38b8295448ed77ee.png" alt="Farming landscape in Bastar" class="origins__image">
+    <div class="origins__media" data-reveal data-reveal-delay="120">
+      <div class="origins__image-wrap">
+        <img src="assets/38b8295448ed77ee.png" alt="Farming landscape in Bastar" class="origins__image">
+      </div>
+      <span class="origins__caption">Maa Danteshwari Herbal Farm · Kondagaon</span>
     </div>
   </section>
 
   <!-- ─────────────────── LEGACY ─────────────────── -->
-  <section class="legacy">
+  <section class="legacy" id="legacy">
     <div class="legacy__texture" aria-hidden="true"></div>
     <div class="legacy__inner">
       <div class="legacy__header">
-        <h2 class="heading-xl">Rajaram Tripathi's Legacy</h2>
-        <p class="body-italic">Over the years, this belief has taken shape through interconnected systems — linking farming, conservation, and market access.</p>
+        <div class="eyebrow" data-reveal><span class="eyebrow__num">02</span><span class="eyebrow__text">The Legacy</span></div>
+        <h2 class="section-title" data-reveal data-reveal-delay="80">An interconnected <em>ecosystem</em></h2>
+        <p class="section-lead" data-reveal data-reveal-delay="160">Over the years, this belief has taken shape through interconnected systems — linking farming, conservation, and market access.</p>
       </div>
       <div class="legacy__cards">
-        <article class="legacy__card">
-          <div class="legacy__card-icon">
-            <img src="5fc047aa168ab700.png" alt="" width="21" height="21">
-          </div>
+        <article class="legacy__card" data-reveal>
+          <span class="legacy__card-num">01</span>
+          <div class="legacy__card-icon"><img src="assets/5fc047aa168ab700.png" alt="" width="22" height="22"></div>
           <h3 class="legacy__card-title">Herbal Value Chain</h3>
-          <p class="body-italic">Through Maa Danteshwari Herbal Products, a complete ecosystem has been developed — connecting cultivation to processing, manufacturing, and global markets.</p>
+          <p class="legacy__card-text">Through Maa Danteshwari Herbal Products, a complete ecosystem connects cultivation to processing, manufacturing, and global markets.</p>
         </article>
-        <article class="legacy__card">
-          <div class="legacy__card-icon">
-            <img src="5fc047aa168ab700.png" alt="" width="21" height="21">
-          </div>
+        <article class="legacy__card" data-reveal data-reveal-delay="100">
+          <span class="legacy__card-num">02</span>
+          <div class="legacy__card-icon"><img src="assets/5fc047aa168ab700.png" alt="" width="22" height="22"></div>
           <h3 class="legacy__card-title">Farming Innovation</h3>
-          <p class="body-italic">High Value Multi Layer Farming (HVML) rethinks how land is used — enabling multiple crops, better yield, and long-term soil health within a single integrated system.</p>
+          <p class="legacy__card-text">High Value Multi Layer Farming (HVML) rethinks how land is used — multiple crops, better yield, and long-term soil health in one system.</p>
         </article>
-        <article class="legacy__card">
-          <div class="legacy__card-icon">
-            <img src="5fc047aa168ab700.png" alt="" width="21" height="21">
-          </div>
+        <article class="legacy__card" data-reveal data-reveal-delay="200">
+          <span class="legacy__card-num">03</span>
+          <div class="legacy__card-icon"><img src="assets/5fc047aa168ab700.png" alt="" width="22" height="22"></div>
           <h3 class="legacy__card-title">Biodiversity Conservation</h3>
-          <p class="body-italic">Over 250 rare and medicinal plant species are actively preserved and cultivated, creating a living repository of traditional botanical knowledge.</p>
+          <p class="legacy__card-text">Over 250 rare and medicinal plant species are actively preserved and cultivated — a living repository of botanical knowledge.</p>
         </article>
-        <article class="legacy__card">
-          <div class="legacy__card-icon">
-            <img src="5fc047aa168ab700.png" alt="" width="21" height="21">
-          </div>
+        <article class="legacy__card" data-reveal data-reveal-delay="300">
+          <span class="legacy__card-num">04</span>
+          <div class="legacy__card-icon"><img src="assets/5fc047aa168ab700.png" alt="" width="22" height="22"></div>
           <h3 class="legacy__card-title">Farmer Network</h3>
-          <p class="body-italic">A growing network of over 80,000 farmers has been trained and supported to adopt sustainable and profitable agricultural practices.</p>
+          <p class="legacy__card-text">A growing network of over 80,000 farmers, trained and supported to adopt sustainable and profitable agricultural practices.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ─────────────────── ABOUT ─────────────────── -->
-  <section class="about">
-    <div class="about__left">
+  <!-- ─────────────────── BIOGRAPHY (dossier) ─────────────────── -->
+  <section class="bio" id="about">
 
-      <div class="about__intro">
-        <h2 class="heading-xl">About Dr. Rajaram Tripathi</h2>
-        <p class="body-italic-lg">Herbal Farmer &bull; Scientist &bull; System Builder</p>
+    <!-- Lead -->
+    <div class="bio__lead">
+      <div class="bio__lead-portrait" data-reveal>
+        <span class="bio__lead-frame" aria-hidden="true"></span>
+        <img src="assets/55635a4d94ac6892.png" alt="Portrait of Dr. Rajaram Tripathi">
       </div>
-
-      <p class="body-italic">
-        Dr. Rajaram Tripathi is widely regarded as one of India's leading voices in organic and herbal farming — often referred to as the Green Warrior of India.
-        <br><br>
-        His work bridges traditional knowledge with scientific farming practices, creating systems that are both environmentally sustainable and economically viable.
-      </p>
-
-      <div class="about__topic">
-        <h4 class="topic-label">ENVIRONMENT &amp; BIODIVERSITY</h4>
-        <p class="body-regular">A strong advocate of nature-led farming, Dr. Tripathi believes that environmental protection is only possible when natural ecosystems are allowed to grow and function organically.</p>
-        <ul class="ruled-list">
-          <li>Conserved 250+ rare medicinal plant species, many listed in the United Nations Red Data Book</li>
-          <li>Planted 3.4 lakh+ trees, contributing significantly to ecological restoration</li>
-          <li>Developed the Ethnico Medico Park, a living herbal forest preserving endangered species</li>
+      <div class="bio__lead-text">
+        <div class="eyebrow" data-reveal><span class="eyebrow__num">03</span><span class="eyebrow__text">Biography</span></div>
+        <h2 class="bio__name" data-reveal data-reveal-delay="80">Dr. Rajaram<br>Tripathi</h2>
+        <p class="bio__role" data-reveal data-reveal-delay="140">Herbal Farmer &middot; Scientist &middot; System Builder</p>
+        <p class="bio__intro" data-reveal data-reveal-delay="200">Widely regarded as one of India's leading voices in organic and herbal farming — often referred to as the <em>Green Warrior of India</em>. His work bridges traditional knowledge with scientific farming practice, creating systems that are both environmentally sustainable and economically viable.</p>
+        <ul class="bio__facts" data-reveal data-reveal-delay="260">
+          <li><span>Based in</span>Kondagaon, Chhattisgarh</li>
+          <li><span>Farming since</span>1996 · 33+ years</li>
+          <li><span>Founder of</span>Maa Danteshwari Herbal Group</li>
         </ul>
       </div>
+    </div>
 
-      <div class="about__topic">
-        <h4 class="topic-label">FARMING INNOVATION &amp; APPROACH</h4>
-        <p class="body-regular">
-          Dr. Tripathi has redefined conventional agricultural practices by introducing scientific and ecological methods into farming.
-          <br><br>
-          His approach challenges traditional assumptions — for instance, even termites, typically seen as harmful, are integrated into the ecosystem for their role in improving soil nutrition.
-          <br><br>
-          These innovations demonstrate how natural processes can be leveraged rather than controlled.
-        </p>
-      </div>
+    <!-- Body: sticky index + entries -->
+    <div class="bio__body">
+      <aside class="bio__index" aria-label="Biography contents">
+        <span class="bio__index-label">Contents</span>
+        <ol class="bio__index-list" id="bioIndex">
+          <li><a href="#bio-1" data-i="1"><span class="bio__index-num">01</span>Environment &amp; Biodiversity</a></li>
+          <li><a href="#bio-2" data-i="2"><span class="bio__index-num">02</span>Farming Innovation</a></li>
+          <li><a href="#bio-3" data-i="3"><span class="bio__index-num">03</span>Market &amp; Value Chain</a></li>
+          <li><a href="#bio-4" data-i="4"><span class="bio__index-num">04</span>Education &amp; Depth</a></li>
+          <li><a href="#bio-5" data-i="5"><span class="bio__index-num">05</span>Writing &amp; Research</a></li>
+          <li><a href="#bio-6" data-i="6"><span class="bio__index-num">06</span>Leadership</a></li>
+          <li><a href="#bio-7" data-i="7"><span class="bio__index-num">07</span>Recognition</a></li>
+        </ol>
+      </aside>
 
-      <div class="about__topic">
-        <h4 class="topic-label">MARKET &amp; VALUE CHAIN</h4>
-        <p class="body-regular">Understanding that farming must connect to real economic outcomes, he built a complete herbal value chain through Maa Danteshwari Herbal Products.</p>
-        <p class="body-regular">This ecosystem integrates:</p>
-        <div class="tag-row">
-          <span class="tag">Cultivation</span>
-          <span class="tag">Processing</span>
-          <span class="tag">Manufacturing</span>
-          <span class="tag">Export</span>
-        </div>
-        <p class="body-regular">It ensures that farmers are not just producers, but participants in a structured and profitable system.</p>
-      </div>
+      <div class="bio__entries">
 
-      <div class="about__topic">
-        <h4 class="topic-label">EDUCATION &amp; INTELLECTUAL DEPTH</h4>
-        <p class="body-regular">Dr. Tripathi's academic journey reflects an exceptional commitment to knowledge:</p>
-        <ul class="ruled-list">
-          <li>B.Sc. in Agriculture Sciences</li>
-          <li>Master's degrees in multiple disciplines including Economics, History, Hindi Literature, and English Literature</li>
-          <li>Doctorates in two subjects</li>
-        </ul>
-        <p class="body-regular">He is often regarded as one of the most academically accomplished farmers in India.</p>
-      </div>
+        <article class="bio-entry" id="bio-1" data-reveal>
+          <span class="bio-entry__num">01</span>
+          <div class="bio-entry__main">
+            <h3 class="bio-entry__title">Environment &amp; Biodiversity</h3>
+            <p class="prose">A strong advocate of nature-led farming, Dr. Tripathi believes that environmental protection is only possible when natural ecosystems are allowed to grow and function organically.</p>
+            <ul class="ruled-list">
+              <li>Conserved 250+ rare medicinal plant species, many listed in the United Nations Red Data Book</li>
+              <li>Planted 3.4 lakh+ trees, contributing significantly to ecological restoration</li>
+              <li>Developed the Ethnico Medico Park, a living herbal forest preserving endangered species</li>
+            </ul>
+          </div>
+        </article>
 
-      <div class="about__topic">
-        <h4 class="topic-label">WRITING, RESEARCH &amp; THOUGHT LEADERSHIP</h4>
-        <p class="body-regular">Beyond fieldwork, Dr. Tripathi actively contributes to agricultural and social discourse:</p>
-        <ul class="ruled-list">
-          <li>National voice and advocate for organic and herbal farming in India</li>
-          <li>Editor of the tribal affairs magazine <em>Kaksad</em></li>
-          <li>Writes regularly on agriculture, environment, and social issues</li>
-          <li>Author of two books</li>
-          <li>Delivered 400+ lectures across institutions and universities</li>
-        </ul>
-      </div>
+        <article class="bio-entry" id="bio-2" data-reveal>
+          <span class="bio-entry__num">02</span>
+          <div class="bio-entry__main">
+            <h3 class="bio-entry__title">Farming Innovation &amp; Approach</h3>
+            <p class="prose">Dr. Tripathi has redefined conventional agricultural practices by introducing scientific and ecological methods into farming. His approach challenges traditional assumptions — for instance, even termites, typically seen as harmful, are integrated into the ecosystem for their role in improving soil nutrition. These innovations demonstrate how natural processes can be leveraged rather than controlled.</p>
+          </div>
+        </article>
 
-      <div class="about__topic">
-        <h4 class="topic-label">LEADERSHIP &amp; COLLABORATIONS</h4>
-        <p class="body-regular">His work has also extended into institutional leadership and national-level collaborations:</p>
-        <ul class="ruled-list">
-          <li>National convener for farmer welfare and sustainable agriculture initiatives</li>
-          <li>Collaborations with organisations like CSIR</li>
-          <li>Agreements for stevia cultivation and processing infrastructure</li>
-        </ul>
-      </div>
+        <figure class="bio-quote" data-reveal>
+          <blockquote>“Natural processes can be leveraged, rather than controlled.”</blockquote>
+        </figure>
 
-      <div class="about__topic">
-        <h4 class="topic-label">RECOGNITION &amp; AWARDS</h4>
-        <p class="body-regular">Dr. Tripathi's contributions have been widely recognised both nationally and internationally:</p>
-        <ul class="ruled-list">
-          <li>Recipient of 150+ agricultural and environmental awards</li>
-          <li>Honoured with the title <em>Green Warrior</em></li>
-          <li>Recipient of prestigious agricultural entrepreneurship awards</li>
-        </ul>
-      </div>
+        <article class="bio-entry" id="bio-3" data-reveal>
+          <span class="bio-entry__num">03</span>
+          <div class="bio-entry__main">
+            <h3 class="bio-entry__title">Market &amp; Value Chain</h3>
+            <p class="prose">Understanding that farming must connect to real economic outcomes, he built a complete herbal value chain through Maa Danteshwari Herbal Products. This ecosystem integrates every stage:</p>
+            <div class="flow-row">
+              <span class="flow-step">Cultivation</span>
+              <svg class="flow-arrow" width="20" height="8" viewBox="0 0 20 8" aria-hidden="true"><path d="M0 4h17M14 1l4 3-4 3" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+              <span class="flow-step">Processing</span>
+              <svg class="flow-arrow" width="20" height="8" viewBox="0 0 20 8" aria-hidden="true"><path d="M0 4h17M14 1l4 3-4 3" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+              <span class="flow-step">Manufacturing</span>
+              <svg class="flow-arrow" width="20" height="8" viewBox="0 0 20 8" aria-hidden="true"><path d="M0 4h17M14 1l4 3-4 3" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+              <span class="flow-step">Export</span>
+            </div>
+            <p class="prose">It ensures that farmers are not just producers, but participants in a structured and profitable system.</p>
+          </div>
+        </article>
 
-    </div><!-- /.about__left -->
+        <article class="bio-entry" id="bio-4" data-reveal>
+          <span class="bio-entry__num">04</span>
+          <div class="bio-entry__main">
+            <h3 class="bio-entry__title">Education &amp; Intellectual Depth</h3>
+            <p class="prose">Dr. Tripathi's academic journey reflects an exceptional commitment to knowledge:</p>
+            <ul class="ruled-list">
+              <li>B.Sc. in Agriculture Sciences</li>
+              <li>Master's degrees in multiple disciplines — Economics, History, Hindi Literature, and English Literature</li>
+              <li>Doctorates in two subjects</li>
+            </ul>
+          </div>
+        </article>
 
-    <div class="about__right">
-      <div class="about__photo-frame">
-        <img src="55635a4d94ac6892.png" alt="Dr. Rajaram Tripathi in the field">
-      </div>
-      <div class="about__photo-frame">
-        <img src="55635a4d94ac6892.png" alt="Dr. Rajaram Tripathi speaking at an event">
-      </div>
-      <div class="about__photo-frame">
-        <img src="55635a4d94ac6892.png" alt="Dr. Rajaram Tripathi with farmers">
+        <figure class="bio-quote" data-reveal>
+          <blockquote>“One of the most academically accomplished farmers in India.”</blockquote>
+        </figure>
+
+        <article class="bio-entry" id="bio-5" data-reveal>
+          <span class="bio-entry__num">05</span>
+          <div class="bio-entry__main">
+            <h3 class="bio-entry__title">Writing, Research &amp; Thought Leadership</h3>
+            <p class="prose">Beyond fieldwork, Dr. Tripathi actively contributes to agricultural and social discourse:</p>
+            <ul class="ruled-list">
+              <li>National voice and advocate for organic and herbal farming in India</li>
+              <li>Editor of the tribal affairs magazine <em>Kaksad</em></li>
+              <li>Writes regularly on agriculture, environment, and social issues</li>
+              <li>Author of two books</li>
+              <li>Delivered 400+ lectures across institutions and universities</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="bio-entry" id="bio-6" data-reveal>
+          <span class="bio-entry__num">06</span>
+          <div class="bio-entry__main">
+            <h3 class="bio-entry__title">Leadership &amp; Collaborations</h3>
+            <p class="prose">His work has also extended into institutional leadership and national-level collaborations:</p>
+            <ul class="ruled-list">
+              <li>National convener for farmer welfare and sustainable agriculture initiatives</li>
+              <li>Collaborations with organisations like CSIR</li>
+              <li>Agreements for stevia cultivation and processing infrastructure</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="bio-entry" id="bio-7" data-reveal>
+          <span class="bio-entry__num">07</span>
+          <div class="bio-entry__main">
+            <h3 class="bio-entry__title">Recognition &amp; Awards</h3>
+            <p class="prose">Dr. Tripathi's contributions have been widely recognised both nationally and internationally:</p>
+            <ul class="ruled-list">
+              <li>Recipient of 150+ agricultural and environmental awards</li>
+              <li>Honoured with the title <em>Green Warrior</em></li>
+              <li>Recipient of prestigious agricultural entrepreneurship awards</li>
+            </ul>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- ─────────────────── SUSTAINABLE FARMING ─────────────────── -->
-  <section class="farming">
+  <!-- ─────────────────── WORKING MODEL (deep-green feature) ─────────────────── -->
+  <section class="farming" id="farming">
     <div class="farming__texture" aria-hidden="true"></div>
     <div class="farming__inner">
-
       <div class="farming__top">
         <div class="farming__text">
-          <div class="farming__header">
-            <h2 class="heading-xl">A Working Model of Sustainable Farming</h2>
-            <p class="body-italic">Developed over decades, this model integrates biodiversity, scientific methods, and market linkage — demonstrating how farming can be both sustainable and profitable.</p>
-          </div>
-          <p class="body-regular">Under the supervision of Tripathi, 34 acres of land in Kondagaon is being cultivated extensively by certified organic method, along with this black pepper and bitterness stevia is cultivated on large scale. In order to extend this model, sustainable organic farming is being done on 1100 acres of land in Bastar region with several farmer groups. Biodiversity is clearly reflected in Maa Danteshwari Herbal Farm and is a special farm of its kind in the country. In the villages of Bastar region, Salna, Palna, Marangpuri, Randhana, Makdi, Chikalputi, Sambalpur, Chapka, Poleng, and Karanji villages, organic farming and vegetable cultivation is being done on 700 acres with help of farmers groups. Dr. Tripathi has been involved in farming since 1996 and in these 33 years he has presented an exemplary model of farming.</p>
+          <div class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__num">04</span><span class="eyebrow__text">The Working Model</span></div>
+          <h2 class="section-title section-title--light" data-reveal data-reveal-delay="80">A working model of <em>sustainable farming</em></h2>
+          <p class="section-lead section-lead--light" data-reveal data-reveal-delay="160">Developed over decades, this model integrates biodiversity, scientific methods, and market linkage — demonstrating how farming can be both sustainable and profitable.</p>
         </div>
-        <div class="farming__photo-frame">
-          <img src="c184c20779088828.png" alt="Maa Danteshwari Herbal Farm">
+        <div class="farming__photo-frame" data-reveal data-reveal-delay="120" data-parallax="0.05">
+          <img src="assets/c184c20779088828.png" alt="Maa Danteshwari Herbal Farm">
         </div>
       </div>
 
-      <p class="body-regular farming__para">Maa Danteshwari Herbal Farm is the only farm where biodiversity creates an attractive view and presents an example of profitable farming. In the farm, 3.4 lakh trees and more than 240 kinds of Medicinal herbs, spices, Aromatic Farming and other high value crops, Germ plaza are cultivated through the crop cycle. Crop pests in the farm are managed with biological technology, due to which crop-based pests are highly inhabited. He has promote the Organic Cultivation of Indian Medicinal and Aromatic Crops and Establishment of Ethno Medico Forest.</p>
+      <div class="farming__cols">
+        <p class="prose prose--light" data-reveal>Under the supervision of Tripathi, 34 acres of land in Kondagaon is being cultivated extensively by certified organic method, along with black pepper and bitter stevia cultivated on a large scale. To extend this model, sustainable organic farming is being done on 1,100 acres of land in the Bastar region with several farmer groups. Biodiversity is clearly reflected in Maa Danteshwari Herbal Farm — a special farm of its kind in the country.</p>
+        <p class="prose prose--light" data-reveal data-reveal-delay="100">In the villages of the Bastar region — Salna, Palna, Marangpuri, Randhana, Makdi, Chikalputi, Sambalpur, Chapka, Poleng, and Karanji — organic farming and vegetable cultivation is being done on 700 acres with the help of farmer groups. In the farm, 3.4 lakh trees and more than 240 kinds of medicinal herbs, spices, and high-value crops are cultivated through the crop cycle, with pests managed by biological technology.</p>
+      </div>
 
       <div class="farming__bullets">
-        <p class="body-regular">For the last 20 years, farmers of various regions of the country are getting free training on organic farming, cultivation of medicinal plants, making of organic manure, organic pesticides, and fungicides. So far, more than 70 thousand farmers have been trained.</p>
-        <p class="body-regular">Training on low cost tissue culture technic is given in the Natural Effective Micro Manufacturing Unit, Kondagaon Industrial Area.</p>
-        <p class="body-regular">Presented a model of high benefit from Australian teak, a partner in nitrogen fixation.</p>
-        <p class="body-regular">Post harvesting, packaging and marketing training is being given in Maa Danteshwari Herbal Processing Industry located in Kondagaon Industrial Area.</p>
+        <div class="farming__bullet" data-reveal><span class="farming__bullet-num">01</span><p>For the last 20 years, farmers across the country receive free training on organic farming, cultivation of medicinal plants, and making organic manure, pesticides, and fungicides. More than 70,000 farmers have been trained.</p></div>
+        <div class="farming__bullet" data-reveal data-reveal-delay="80"><span class="farming__bullet-num">02</span><p>Training on low-cost tissue culture technique is given at the Natural Effective Micro Manufacturing Unit, Kondagaon Industrial Area.</p></div>
+        <div class="farming__bullet" data-reveal data-reveal-delay="160"><span class="farming__bullet-num">03</span><p>Presented a model of high benefit from Australian teak, a partner in nitrogen fixation.</p></div>
+        <div class="farming__bullet" data-reveal data-reveal-delay="240"><span class="farming__bullet-num">04</span><p>Post-harvest packaging and marketing training is given at the Maa Danteshwari Herbal Processing Industry, Kondagaon Industrial Area.</p></div>
       </div>
-
     </div>
   </section>
 
   <!-- ─────────────────── MEDIA & COVERAGE ─────────────────── -->
-  <section class="media">
+  <section class="media" id="media">
     <div class="media__inner">
       <div class="media__header">
-        <h2 class="heading-xl">Media &amp; Coverage</h2>
-        <p class="body-italic-lg">The work has been featured across national and international platforms — highlighting its impact on farming, biodiversity, and rural livelihoods.</p>
+        <div class="eyebrow" data-reveal><span class="eyebrow__num">05</span><span class="eyebrow__text">In the Press</span></div>
+        <h2 class="section-title" data-reveal data-reveal-delay="80">Media &amp; <em>Coverage</em></h2>
+        <p class="section-lead" data-reveal data-reveal-delay="160">Featured across national and international platforms — highlighting the impact on farming, biodiversity, and rural livelihoods.</p>
       </div>
 
-      <div class="media__main">
-        <div class="media__video-panel" role="region" aria-label="Featured video">
+      <!-- Featured story -->
+      <div class="media__feature" data-reveal>
+        <div class="media__feature-video">
+          <div class="media__feature-texture" aria-hidden="true"></div>
           <button class="media__play-btn" aria-label="Play featured video">
-            <svg width="20" height="22" viewBox="0 0 20 22" fill="white" aria-hidden="true">
-              <path d="M2 1.5L18 11L2 20.5V1.5Z"/>
-            </svg>
+            <span class="media__play-pulse" aria-hidden="true"></span>
+            <svg width="22" height="24" viewBox="0 0 22 24" fill="currentColor" aria-hidden="true"><path d="M2 1.5L20 12L2 22.5V1.5Z"/></svg>
           </button>
+          <div class="media__feature-caption">
+            <span class="media__feature-kicker">Featured Film</span>
+            <span class="media__feature-title">The Maa Danteshwari Story</span>
+          </div>
         </div>
-        <div class="media__news-panel">
-          <img src="73f7683d34156706.png" alt="Newspaper coverage of Dr. Rajaram Tripathi">
-        </div>
+        <figure class="media__feature-clip">
+          <img src="assets/73f7683d34156706.png" alt="Newspaper coverage of Dr. Rajaram Tripathi">
+          <figcaption>Print Feature</figcaption>
+        </figure>
       </div>
 
-      <div class="media__grid">
-        <div class="media__tile"><img src="0fc308156253f713.png" alt="Media coverage"></div>
-        <div class="media__tile"><img src="0fc308156253f713.png" alt="Media coverage"></div>
-        <div class="media__tile"><img src="0fc308156253f713.png" alt="Media coverage"></div>
-        <div class="media__tile"><img src="0fc308156253f713.png" alt="Media coverage"></div>
+      <!-- Press gallery -->
+      <div class="media__gallery">
+        <figure class="media__clip media__clip--wide" data-reveal><img src="assets/0fc308156253f713.png" alt="Press coverage"><figcaption><span>Regional Daily</span></figcaption></figure>
+        <figure class="media__clip" data-reveal data-reveal-delay="90"><img src="assets/0fc308156253f713.png" alt="Press coverage"><figcaption><span>Magazine Profile</span></figcaption></figure>
+        <figure class="media__clip" data-reveal data-reveal-delay="180"><img src="assets/0fc308156253f713.png" alt="Press coverage"><figcaption><span>National Press</span></figcaption></figure>
+        <figure class="media__clip media__clip--wide" data-reveal data-reveal-delay="270"><img src="assets/0fc308156253f713.png" alt="Press coverage"><figcaption><span>Television</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── AS FEATURED IN ─────────────────── -->
+  <section class="featured" aria-label="As featured in">
+    <div class="featured__inner">
+      <span class="featured__label">As Featured In</span>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span class="logo"><span class="logo__mark logo__mark--diamond"></span>Bharat&nbsp;Samachar</span>
+          <span class="logo logo--serif">KrishiWorld</span>
+          <span class="logo"><span class="logo__mark logo__mark--tri"></span>GreenWire</span>
+          <span class="logo logo--serif">The&nbsp;National</span>
+          <span class="logo"><span class="logo__mark logo__mark--sq"></span>PrimeTime&nbsp;TV</span>
+          <span class="logo logo--serif">Sahyog&nbsp;News</span>
+          <span class="logo"><span class="logo__mark logo__mark--circle"></span>EcoTimes</span>
+          <span class="logo logo--serif">RuralVoice</span>
+          <!-- duplicate set for seamless loop -->
+          <span class="logo" aria-hidden="true"><span class="logo__mark logo__mark--diamond"></span>Bharat&nbsp;Samachar</span>
+          <span class="logo logo--serif" aria-hidden="true">KrishiWorld</span>
+          <span class="logo" aria-hidden="true"><span class="logo__mark logo__mark--tri"></span>GreenWire</span>
+          <span class="logo logo--serif" aria-hidden="true">The&nbsp;National</span>
+          <span class="logo" aria-hidden="true"><span class="logo__mark logo__mark--sq"></span>PrimeTime&nbsp;TV</span>
+          <span class="logo logo--serif" aria-hidden="true">Sahyog&nbsp;News</span>
+          <span class="logo" aria-hidden="true"><span class="logo__mark logo__mark--circle"></span>EcoTimes</span>
+          <span class="logo logo--serif" aria-hidden="true">RuralVoice</span>
+        </div>
+      </div>
+      <p class="featured__note">Placeholder wordmarks — drop real channel / publication logos into <code>assets/logos/</code> and swap.</p>
+    </div>
+  </section>
+
+  <!-- ─────────────────── WATCH / YOUTUBE ─────────────────── -->
+  <section class="watch" id="watch">
+    <div class="watch__inner">
+      <div class="watch__header">
+        <div class="watch__head-text">
+          <div class="eyebrow" data-reveal><span class="eyebrow__num">06</span><span class="eyebrow__text">Watch</span></div>
+          <h2 class="section-title" data-reveal data-reveal-delay="80">On <em>Film</em></h2>
+          <p class="section-lead" data-reveal data-reveal-delay="160">Documentaries, field walks, and talks — see the work in motion on the YouTube channel.</p>
+        </div>
+        <a class="watch__channel" href="https://www.youtube.com/" target="_blank" rel="noopener" data-reveal data-reveal-delay="160">
+          <svg viewBox="0 0 28 20" width="28" height="20" aria-hidden="true"><path fill="currentColor" d="M27.4 3.1a3.5 3.5 0 0 0-2.46-2.48C22.77 0 14 0 14 0S5.23 0 3.06.62A3.5 3.5 0 0 0 .6 3.1 36.6 36.6 0 0 0 0 10a36.6 36.6 0 0 0 .6 6.9 3.5 3.5 0 0 0 2.46 2.48C5.23 20 14 20 14 20s8.77 0 10.94-.62a3.5 3.5 0 0 0 2.46-2.48A36.6 36.6 0 0 0 28 10a36.6 36.6 0 0 0-.6-6.9Z"/><path fill="#fff" d="M11.2 14.3 18.5 10l-7.3-4.3v8.6Z"/></svg>
+          <span>Visit YouTube Channel</span>
+        </a>
+      </div>
+
+      <div class="watch__grid">
+        <a class="vcard" href="https://www.youtube.com/" target="_blank" rel="noopener" data-reveal>
+          <div class="vcard__thumb">
+            <img src="assets/38b8295448ed77ee.png" alt="Inside the herbal farm">
+            <span class="vcard__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M5 3l16 9-16 9V3Z"/></svg></span>
+            <span class="vcard__time">12:04</span>
+          </div>
+          <div class="vcard__meta">
+            <h3 class="vcard__title">Inside Maa Danteshwari Herbal Farm</h3>
+            <span class="vcard__link">Watch on YouTube <svg width="11" height="11" viewBox="0 0 11 11" aria-hidden="true"><path d="M1 10 10 1M3 1h7v7" stroke="currentColor" stroke-width="1.2" fill="none"/></svg></span>
+          </div>
+        </a>
+        <a class="vcard" href="https://www.youtube.com/" target="_blank" rel="noopener" data-reveal data-reveal-delay="100">
+          <div class="vcard__thumb">
+            <img src="assets/55635a4d94ac6892.png" alt="Documentary portrait">
+            <span class="vcard__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M5 3l16 9-16 9V3Z"/></svg></span>
+            <span class="vcard__time">08:31</span>
+          </div>
+          <div class="vcard__meta">
+            <h3 class="vcard__title">The Green Warrior of India — A Portrait</h3>
+            <span class="vcard__link">Watch on YouTube <svg width="11" height="11" viewBox="0 0 11 11" aria-hidden="true"><path d="M1 10 10 1M3 1h7v7" stroke="currentColor" stroke-width="1.2" fill="none"/></svg></span>
+          </div>
+        </a>
+        <a class="vcard" href="https://www.youtube.com/" target="_blank" rel="noopener" data-reveal data-reveal-delay="200">
+          <div class="vcard__thumb">
+            <img src="assets/c184c20779088828.png" alt="Organic farming methods">
+            <span class="vcard__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M5 3l16 9-16 9V3Z"/></svg></span>
+            <span class="vcard__time">15:47</span>
+          </div>
+          <div class="vcard__meta">
+            <h3 class="vcard__title">Organic Farming, Reimagined</h3>
+            <span class="vcard__link">Watch on YouTube <svg width="11" height="11" viewBox="0 0 11 11" aria-hidden="true"><path d="M1 10 10 1M3 1h7v7" stroke="currentColor" stroke-width="1.2" fill="none"/></svg></span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ─────────────────── FOOTER ─────────────────── -->
   <footer class="footer" id="contact">
-    <div class="footer__top">
-      <div class="footer__cols">
+    <div class="footer__texture" aria-hidden="true"></div>
 
-        <div class="footer__col">
-          <h5 class="footer__col-heading">Residence</h5>
-          <p class="footer__col-text">"Herbal Estate" House No&nbsp;-151 DNK Colony, Kondagaon, Near BSNL Exchange office,<br>Dist-Kondagaon (C.G.) 494226</p>
-          <p class="footer__col-text">Ph : (+91)7786-242506<br>Email : rajaramherbal@gmail.com</p>
-        </div>
-
-        <div class="footer__col">
-          <h5 class="footer__col-heading">Useful Pages</h5>
-          <nav class="footer__nav" aria-label="Useful pages">
-            <a href="#">About</a>
-            <a href="#">Organisation Profile</a>
-            <a href="#">Contact</a>
-            <a href="#">Awards</a>
-          </nav>
-        </div>
-
-        <div class="footer__col">
-          <h5 class="footer__col-heading">Contact</h5>
-          <p class="footer__col-text">"Herbal Estate" G-14, Agresan Nager, Ring Road&nbsp;-&nbsp;1, Raipura, Raipur, C.G, 492013.</p>
-          <p class="footer__col-text">Ph : (+91)771-2263433 / 2262933</p>
-        </div>
-
-      </div><!-- /.footer__cols -->
-
-      <div class="footer__map">
-        <img src="59005d7bcdde813b.png" alt="Location map">
-      </div>
-    </div><!-- /.footer__top -->
-
-    <div class="footer__logomark">
-      <img src="path14.svg" alt="" width="30" height="22" class="footer__logomark-path">
-      <img src="35f99f812f38a6a5.png" alt="" width="24" height="24">
+    <div class="footer__signoff">
+      <span class="eyebrow eyebrow--light"><span class="eyebrow__text">Get in touch</span></span>
+      <p class="footer__statement">Bridging farming, science, and <em>livelihood.</em></p>
     </div>
 
-    <div class="footer__copyright">
-      <p>Copyright &copy; 2020 Dr. Rajaram Tripathi.</p>
-      <a href="#" class="footer__top-btn" aria-label="Back to top">
-        <svg width="12" height="13" viewBox="0 0 12 13" fill="currentColor" aria-hidden="true">
-          <path d="M6 0l.354.354L12 6l-.707.707L6.5 1.5V13h-1V1.5L.707 6.707 0 6 5.646.354 6 0z"/>
-        </svg>
-      </a>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <span class="footer__col-label">Residence</span>
+        <p class="footer__col-text">"Herbal Estate", House No. 151, DNK Colony, Near BSNL Exchange Office, Kondagaon (C.G.) 494226</p>
+        <a class="footer__col-link" href="tel:+917786242506">(+91) 7786-242506</a>
+        <a class="footer__col-link" href="mailto:rajaramherbal@gmail.com">rajaramherbal@gmail.com</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">Office</span>
+        <p class="footer__col-text">"Herbal Estate", G-14, Agrasen Nagar, Ring Road-1, Raipura, Raipur (C.G.) 492013</p>
+        <a class="footer__col-link" href="tel:+917712263433">(+91) 771-2263433 / 2262933</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">Explore</span>
+        <nav class="footer__nav" aria-label="Useful pages">
+          <a href="#about">Profile</a>
+          <a href="#legacy">Organisation</a>
+          <a href="#farming">The Model</a>
+          <a href="#media">Press &amp; Awards</a>
+        </nav>
+      </div>
+      <div class="footer__col footer__col--map">
+        <span class="footer__col-label">Find us</span>
+        <div class="footer__map"><img src="assets/59005d7bcdde813b.png" alt="Location map"></div>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <div class="footer__brand">
+        <span class="footer__brand-name">Dr. Rajaram Tripathi</span>
+        <span class="footer__brand-sub">Maa Danteshwari Herbal Group</span>
+      </div>
+      <p class="footer__copy">Copyright &copy; 2020 Dr. Rajaram Tripathi. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="YouTube" class="footer__social"><img src="assets/path14.svg" alt="" width="20" height="15"></a>
+        <a href="#" aria-label="Facebook" class="footer__social"><img src="assets/35f99f812f38a6a5.png" alt="" width="18" height="18"></a>
+        <a href="#top" class="footer__top-btn" aria-label="Back to top">
+          <svg width="12" height="13" viewBox="0 0 12 13" fill="currentColor" aria-hidden="true"><path d="M6 0l.354.354L12 6l-.707.707L6.5 1.5V13h-1V1.5L.707 6.707 0 6 5.646.354 6 0z"/></svg>
+        </a>
+      </div>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
