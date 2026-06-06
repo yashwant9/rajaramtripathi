@@ -80,8 +80,9 @@ just point it at this folder.
 - The press-gallery captions and the "As Featured In" wordmarks are **placeholders** —
   swap in real outlet names and logos.
 - The play buttons / video cards link out to YouTube; point them at the real videos.
-- Layout is tuned for desktop (1440px design width). Ask for a responsive pass if you
-  need tablet / mobile breakpoints.
+- Layout is fully responsive — desktop (1440px design width), tablet, and mobile.
+  Below 900px the nav collapses into a hamburger menu and all sections reflow to
+  fewer / single columns.
 
 ---
 
